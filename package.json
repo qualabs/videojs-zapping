@@ -1,6 +1,6 @@
 {
   "name": "videojs-zapping",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A plugin to simulate the experience of watching live TV but in the browser.",
   "main": "dist/videojs-zapping.cjs.js",
   "module": "dist/videojs-zapping.es.js",
