@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 .video-js .vjs-channel-number {
   display: none;
 
   position: absolute;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   margin: 0.6em 1.5em;
   font-size: 6em;
   color: rgb(231, 217, 21);

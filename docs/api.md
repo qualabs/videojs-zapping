@@ -9,6 +9,8 @@ The playlist is an array of channels objects, which have the following structure
 | `sources` | Array  |          | An array of objects with the following attributes: `src` and `type`. |
 | `poster`  | String | ✓        | A poster to display for the channel when not playing.                |
 
+> Note: This version only supports one element in the `sources` array.
+
 ## Getting Started
 
 The preferred way to initialize the plugin is as follows:
@@ -18,20 +20,20 @@ const playlist = [
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/sintel/poster.png',
+    poster: "http://media.w3.org/2010/05/sintel/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
 ];
 const zapping = player.zapping({
@@ -56,7 +58,7 @@ const zapping = player.zapping({
 ```
 
 - `autoplay` : This option sets whether or not to play the video automatically when page loads. Default: false.
-- `startIndex` : Sets the first channel to be played whe page loads. Default: 0.
+- `startIndex` : Sets the first channel to be played when page loads. Default: 0.
 - `components` : If true, the player is customized with the 'Start from the beginning', 'Next Channel' and 'Previous Channel' buttons. Otherwise, the player is as default.
 
 ## Methods
@@ -72,20 +74,20 @@ const playlist = [
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/sintel/poster.png',
+    poster: "http://media.w3.org/2010/05/sintel/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
 ];
 const zapping = player.zapping({
@@ -111,29 +113,29 @@ const playlist = [
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/sintel/poster.png',
+    poster: "http://media.w3.org/2010/05/sintel/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
 ];
 
@@ -157,29 +159,29 @@ const playlist = [
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/sintel/poster.png',
+    poster: "http://media.w3.org/2010/05/sintel/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
 ];
 
@@ -206,29 +208,29 @@ const playlist = [
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/sintel/poster.png',
+    poster: "http://media.w3.org/2010/05/sintel/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
 ];
 
@@ -250,7 +252,7 @@ Plays the channel passed by argument or first channel if not.
 
 If it is the first time to watch this channel, then it would start at a random point of the video. That is to simulate better the experience of live TV.
 
-On the other hand, after you hace watched the channel, the next time you select to watch it it would show the 'live' content, calculating the time passed since yo left the channel in the first place.
+On the other hand, after you hace watched the channel, the next time you select to watch it, it would show the 'live' content, calculating the time passed since you left the channel in the first place.
 
 If the number of channel passed to be played is out of bounds, then the method will return without changing the channel.
 
@@ -261,29 +263,29 @@ const playlist = [
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/sintel/poster.png',
+    poster: "http://media.w3.org/2010/05/sintel/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
 ];
 
@@ -318,29 +320,29 @@ const playlist = [
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/sintel/poster.png',
+    poster: "http://media.w3.org/2010/05/sintel/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
   {
     sources: [
       {
-        src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-        type: 'video/mp4',
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
       },
     ],
-    poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
   },
 ];
 
@@ -356,4 +358,169 @@ zapping.playChannel(2);
 
 zapping.lastChannel();
 // will play channel 0
+```
+
+### `zapping.favorite() -> Boolean`
+
+Toggle favorite state to the currently playing channel. Also, it is added to the favorites list.
+
+```js
+const playlist = [
+  {
+    sources: [
+      {
+        src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+        type: "video/mp4",
+      },
+    ],
+    poster: "http://media.w3.org/2010/05/sintel/poster.png",
+  },
+  {
+    sources: [
+      {
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
+      },
+    ],
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
+  },
+  {
+    sources: [
+      {
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
+      },
+    ],
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
+  },
+];
+
+const zapping = player.zapping({
+  playlist: playlist,
+});
+
+zapping.playChannel(0);
+// will play channel 0
+
+zapping.favorite();
+// will set favorite to true
+
+zapping.favorite();
+// will set favorite to false
+```
+
+### `zapping.nextFav() -> void`
+
+Plays the next channel in the favorites list. If you're not watching a favorite channel and call this method, then the first favorite channel in the list is played.
+
+```js
+const playlist = [
+  {
+    sources: [
+      {
+        src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+        type: "video/mp4",
+      },
+    ],
+    poster: "http://media.w3.org/2010/05/sintel/poster.png",
+  },
+  {
+    sources: [
+      {
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
+      },
+    ],
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
+  },
+  {
+    sources: [
+      {
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
+      },
+    ],
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
+  },
+];
+
+const zapping = player.zapping({
+  playlist: playlist,
+});
+
+zapping.playChannel(0);
+// will play channel 0
+
+zapping.favorite();
+// will set favorite to true
+
+zapping.playChannel(1);
+// will play channel 0
+
+zapping.favorite();
+// will set favorite to true of channel 1
+
+zapping.nextFav();
+// will play channel 0
+
+zapping.nextFav();
+// will play channel 1
+```
+
+### `zapping.prevFav() -> void`
+
+Plays the previous channel in the favorites list. If you're not watching a favorite channel and call this method, then the first favorite channel in the list is played.
+
+```js
+const playlist = [
+  {
+    sources: [
+      {
+        src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+        type: "video/mp4",
+      },
+    ],
+    poster: "http://media.w3.org/2010/05/sintel/poster.png",
+  },
+  {
+    sources: [
+      {
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
+      },
+    ],
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
+  },
+  {
+    sources: [
+      {
+        src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+        type: "video/mp4",
+      },
+    ],
+    poster: "http://media.w3.org/2010/05/bunny/poster.png",
+  },
+];
+
+const zapping = player.zapping({
+  playlist: playlist,
+});
+
+zapping.playChannel(0);
+// will play channel 0
+
+zapping.favorite();
+// will set favorite to true
+
+zapping.playChannel(1);
+// will play channel 0
+
+zapping.favorite();
+// will set favorite to true of channel 1
+
+zapping.prevFav();
+// will play channel 0
+
+zapping.prevFav();
+// will play channel 1
 ```

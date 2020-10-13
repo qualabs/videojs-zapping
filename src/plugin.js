@@ -222,7 +222,7 @@ class Zapping extends Plugin {
 
     this.player.one('loadedmetadata', (e) => {
       if (this.player.liveTracker && this.player.liveTracker.isLive() || this.player.duration() === Infinity) {
-        this.player.liveTracker.seekToLiveEdge()
+        this.player.liveTracker.seekToLiveEdge();
         channel.played = true;
       } else {
         if (play) {
@@ -362,7 +362,11 @@ class Zapping extends Plugin {
   prevFav() {
     const index = this.favorites.findIndex(i => i === this.currentIndex);
 
-    const prev = index !== -1 ? (index === 0 ? this.favorites.length - 1 : index - 1) : 0;
+    let prev = 0;
+
+    if (index !== -1) {
+      prev = index === 0 ? this.favorites.length - 1 : index - 1;
+    }
 
     this.playChannel(this.favorites[prev]);
   }
