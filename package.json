@@ -51,8 +51,10 @@
     "ignore": [
       "dist",
       "docs",
-      "test/dist"
-    ]
+      "test/dist",
+      "index.js"
+    ],
+    "jsdoc": false
   },
   "files": [
     "CONTRIBUTING.md",
@@ -82,5 +84,9 @@
     "videojs-generate-rollup-config": "~3.1.0",
     "videojs-generator-verify": "~1.2.0",
     "videojs-standard": "^8.0.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/qualabs/videojs-zapping/issues"
+  },
+  "homepage": "https://github.com/qualabs/videojs-zapping#readme"
 }
