@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>videojs-zapping Demo</title>
+    <link href="node_modules/video.js/dist/video-js.css" rel="stylesheet" />
+    <link href="dist/videojs-zapping.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body style="background-color: #212121">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 mt-3">
+          <div>
+            <video
+              id="videojs-zapping-player"
+              class="video-js vjs-default-skin vjs-fluid mb-4"
+              controls
+            ></video>
+            <div class="d-flex justify-content-between align-items-start">
+              <button id="lastChannel" class="btn btn-success">Last</button>
+              <form id="changeChannelForm">
+                <div class="form-group float-right">
+                  <input
+                    class="form-control"
+                    type="number"
+                    id="channelNumber"
+                  />
+                  <label for="channelNumber">Change channel</label>
+                  <small id="channelHelp" class="form-text float-right"></small>
+                </div>
+              </form>
+
+              <div class="btn-group ml-4" role="group">
+                <button id="pFav" class="btn btn-secondary">Fav--</button>
+                <button id="fav" class="btn btn-primary">Fav</button>
+                <button id="nFav" class="btn btn-secondary">Fav++</button>
+              </div>
+            </div>
+
+            <script src="node_modules/video.js/dist/video.js"></script>
+            <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.min.js"></script>
+
+            <script src="dist/videojs-zapping.js"></script>
+          </div>
+        </div>
+        <div class="col-lg-8 mt-3">
+          <h2 class="mb-4">Configuration</h2>
+          <form id="videoForm">
+            <div class="form-group row">
+              <label for="videoUrl" class="col-sm-2 col-form-label"
+                >Video Url</label
+              >
+              <div class="col-sm-8">
+                <input
+                  type="url"
+                  class="form-control"
+                  name="videoUrl"
+                  id="videoUrl"
+                />
+              </div>
+              <div class="col-sm-2">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+          <div class="form-group row">
+            <label class="col-md-2 col-form-label" for="startTimeUrl"
+              >Start time (sec)</label
+            >
+            <div class="col-md-auto">
+              <input
+                type="number"
+                class="form-control"
+                id="gotoTime"
+                value="0"
+              />
+            </div>
+            <div class="col-md-auto d-flex align-items-center">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="autoplayCb"
+                />
+                <label class="form-check-label" for="autoplayCb"
+                  >Autoplay</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="muteCb" />
+                <label class="form-check-label" for="muteCb">Mute</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="controlsCb"
+                />
+                <label class="form-check-label" for="controlsCb"
+                  >Controls</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="loopCb" />
+                <label class="form-check-label" for="loopCb">Loop</label>
+              </div>
+            </div>
+          </div>
+          <div class="sources mt-5">
+            <h2>Sources</h2>
+            <table class="text-white table table-striped table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Source</th>
+                  <th scope="col">Type</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

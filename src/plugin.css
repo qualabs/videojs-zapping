@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.video-js .vjs-channel-number {
+  display: none;
+
+  position: absolute;
+  font-family: 'VT323', monospace;
+  margin: 0.6em 1.5em;
+  font-size: 6em;
+  color: rgb(231, 217, 21);
+  top: 0;
+  left: 0;
+}
+
+.video-js .vjs-fav-button {
+  width: 3em;
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+.video-js.vjs-paused.vjs-has-started .vjs-channel-number,
+.video-js.vjs-user-active.vjs-has-started .vjs-channel-number,
+.video-js.vjs-paused.vjs-has-started .vjs-fav-button,
+.video-js.vjs-user-active.vjs-has-started .vjs-fav-button,
+.video-js.vjs-has-started .vjs-channel-number.vjs-zapping-show,
+.video-js.vjs-has-started .vjs-fav-button.vjs-zapping-show {
+  display: block;
+}
