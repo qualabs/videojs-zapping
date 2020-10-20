@@ -1,12 +1,13 @@
 # videojs-zapping
 
+[![npm version](https://badge.fury.io/js/videojs-zapping.svg)](https://badge.fury.io/js/videojs-zapping)
+
 A plugin to simulate the experience of watching live TV but in the browser.
 
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 
 - [Overview](#overview)
 - [Installation](#installation)
@@ -44,27 +45,27 @@ This is the simplest case. Get the script in whatever way you prefer and include
 <script src="//path/to/video.min.js"></script>
 <script src="//path/to/videojs-zapping.min.js"></script>
 <script>
-  var player = videojs('my-video');
+  var player = videojs("my-video");
 
   player.zapping({
     playlist: [
       {
         sources: [
           {
-            src: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
-            type: 'video/mp4',
+            src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+            type: "video/mp4",
           },
         ],
-        poster: 'http://media.w3.org/2010/05/sintel/poster.png',
+        poster: "http://media.w3.org/2010/05/sintel/poster.png",
       },
       {
         sources: [
           {
-            src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-            type: 'video/mp4',
+            src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+            type: "video/mp4",
           },
         ],
-        poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+        poster: "http://media.w3.org/2010/05/bunny/poster.png",
       },
     ],
   });
@@ -76,34 +77,34 @@ This is the simplest case. Get the script in whatever way you prefer and include
 When using with Browserify, install videojs-zapping via npm and `require` the plugin as you would any other module.
 
 ```js
-var videojs = require('video.js');
+var videojs = require("video.js");
 
 // The actual plugin function is exported by this module, but it is also
 // attached to the `Player.prototype`; so, there is no need to assign it
 // to a variable.
-require('videojs-zapping');
+require("videojs-zapping");
 
-var player = videojs('my-video');
+var player = videojs("my-video");
 
 player.zapping({
   playlist: [
     {
       sources: [
         {
-          src: 'http://media.w3.org/2010/05/sintel/trailer.mp4',
-          type: 'video/mp4',
+          src: "http://media.w3.org/2010/05/sintel/trailer.mp4",
+          type: "video/mp4",
         },
       ],
-      poster: 'http://media.w3.org/2010/05/sintel/poster.png',
+      poster: "http://media.w3.org/2010/05/sintel/poster.png",
     },
     {
       sources: [
         {
-          src: 'http://media.w3.org/2010/05/bunny/trailer.mp4',
-          type: 'video/mp4',
+          src: "http://media.w3.org/2010/05/bunny/trailer.mp4",
+          type: "video/mp4",
         },
       ],
-      poster: 'http://media.w3.org/2010/05/bunny/poster.png',
+      poster: "http://media.w3.org/2010/05/bunny/poster.png",
     },
   ],
 });
